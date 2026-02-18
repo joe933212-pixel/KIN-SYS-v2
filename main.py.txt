@@ -1,0 +1,21 @@
+from flask import Flask, jsonify
+import hashlib
+import time
+import json
+import uuid
+from datetime import datetime
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    # This is a simple test to show your code is working
+    data = {
+        "status": "online",
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "id": str(uuid.uuid4())
+    }
+    return jsonify(data)
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=10000)
