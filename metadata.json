@@ -1,0 +1,7 @@
+{
+  "name": "KINSYS USIO Bridge Terminal",
+  "description": "A sovereign wealth engine and edge processing interface for the Karuma Supercomputer Node, featuring real-time data shard processing and automated 70/20/10 wealth distribution.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
